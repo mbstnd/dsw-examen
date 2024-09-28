@@ -31,6 +31,7 @@ Route::get('/backoffice', function () {
 // con backoffice
 
 Route::get('backoffice/users', [UserController::class, 'index'])->name('usuarios.index');
+Route::get('backoffice/productos', function() {return view('backoffice.mantenedor.producto');});
 Route::get('backoffice/users/get/{_id}', [UserController::class, 'getById']);
 Route::post('backoffice/users/new', [UserController::class, 'create'])->name('usuarios.create');
 Route::post('backoffice/users/down/{_id}', [UserController::class, 'disable'])->name('usuarios.disable');
