@@ -9,6 +9,5 @@
 @endsection
 
 @section('content')
-
-
-
+<div>Bienvenido al Dashboard</div>
+@endsection

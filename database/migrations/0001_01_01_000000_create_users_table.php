@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
-            $table->boolean('activo')->default(false);
+            $table->boolean('activo')->default(true);
         });
 
         DB::table('users')->insert([
